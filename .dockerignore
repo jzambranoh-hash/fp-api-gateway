@@ -1,0 +1,10 @@
+# Archivos que NO se copian a la imagen (la hacen más liviana y el build más rápido)
+target/
+.git/
+.idea/
+*.iml
+.vscode/
+logs/
+*.log
+.mvn/wrapper/maven-wrapper.jar
+HELP.md
