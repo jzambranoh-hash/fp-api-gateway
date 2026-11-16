@@ -50,7 +50,7 @@ public class SecurityConfig {
                                 "/api/credits/**", "/api/credit-cards/**").hasRole(ADMIN)
                         // operación diaria del banco: ADMIN y EXECUTIVE
                         .pathMatchers("/api/customers/**", "/api/accounts/**", "/api/credits/**",
-                                "/api/credit-cards/**", "/api/transactions/**", "/api/reports/**")
+                                "/api/credit-cards/**", "/api/debit-cards/**", "/api/transactions/**", "/api/reports/**")
                         .hasAnyRole(ADMIN, EXECUTIVE)
                         // cualquier otra ruta: denegada (más seguro que permitir por defecto)
                         .anyExchange().denyAll())
